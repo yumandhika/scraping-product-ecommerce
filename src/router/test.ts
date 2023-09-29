@@ -1,7 +1,8 @@
 import express from 'express';
 
-import { test } from '../controllers/test';
+import { tokped, shopee } from '../controllers/test';
 
 export default (router: express.Router) => {
-  router.get('/test', test);
+  router.get('/tokped', tokped);
+  router.get('/shopee', shopee);
 };
